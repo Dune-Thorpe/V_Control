@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caroline Wanjiru Mwangi Maina</title>
+
+    <script src="../CarolineWanjiruMwangiMaina/scripts/caro_06.js"></script>
+    <script src="../CarolineWanjiruMwangiMaina/scripts/global.js"></script>
+    <style>
+        body {
+            font-family: Helvetica,Arial, sans-serif;
+            color: #333;
+            background-color: #ccc;
+            margin: 10%;
+        }
+        
+        #galleryImg li {
+            display: inline;
+        }
+
+        #galleryImg {
+          list-style: none; 
+          padding: 0;
+          margin: 0;
+        }
+        #placeholder {
+           width: 450px;
+        }
+
+        #galleryImg img {
+            border: 1px solid #ddd; /* Gray border */
+            border-radius: 4px;  /* Rounded border */
+            padding: 5px; /* Some padding */
+            width: 60px; /* Set a small width */
+            height: 60px;
+        }
+
+        /* Add a hover effect (blue shadow) */
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+
+        #galleryImg li a img {
+            border: 0;
+        }
+        #internalnav {
+            margin: 0;
+            padding: 0;
+        }
+        #internalnav li {
+            list-style: none;
+        }
+        #internalnav a {
+            display: block;
+            background: linear-gradient(to left,white,#e90);
+            border: 1px solid #ddd; /* Gray border */
+            border-radius: 10px;  /* Rounded border */
+            padding: 5px;
+            text-decoration: none;
+        }
+        
+        hgroup {
+            display: block;
+            background: linear-gradient(to left,white,lightblue);
+            border: 1px solid #ddd; /* Gray border */
+            border-radius: 10px;  /* Rounded border */
+            padding: 5px;
+        }
+        .tribute a {
+            display: block;
+            background: linear-gradient(to left,white,#e90);
+            border: 1px solid #ddd; /* Gray border */
+            border-radius: 10px;  /* Rounded border */
+            padding: 5px;
+            text-decoration: none;
+            }
+            .tribute {
+                margin: 0;
+                padding: 0;
+            }
+         
+            .tribute li{
+                list-style: none;
+            }
+           #platitude {
+            display: none;
+           }
+           #logo {
+            display: block;
+            background: linear-gradient(to left,white,#e90);
+            border: 1px solid #ddd; /* Gray border */
+            border-radius: 10px;  /* Rounded border */
+            padding: 20px;
+        }
+        #logo p {
+            float: right;
+            font-size: 24px;
+            padding-top: 5em;
+        }
+        #portrait {
+           width: 200px;
+           height: 200px;
+        }
+        .hide {
+            display: none;
+        }
+        #logo p em {
+            font-size: 18px;
+        }
+        @media screen and (max-width: 900px){
+            #logo{
+                display: inline-block;
+            }
+            .tribute li {
+                float:inherit;
+                border-top: 1px solid lightblue;
+                padding-top: 3px;
+            }
+            .tribute li a {
+                display: block;
+                
+            }
+            #portrait img {
+                padding-top: 50px;
+                width: 100px;
+                height: 100px;
+                
+            }
+        }
+       
+        .hide {
+            display: none;
+        }
+        .show {
+            display: contents;
+            background-color: #ccc; 
+        }
+        #life p.show{
+            display: block;
+            background: linear-gradient(to left,white,lightblue);
+            border: 1px solid #ddd; /* Gray border */
+            border-radius: 10px;  /* Rounded border */
+            padding: 20px;
+        }
+        .phide {
+            display: none;
+        }
+        .pshow {
+            display: contents;
+            background-color: #ccc; 
+        }
+ 
+        table {
+            margin: auto;
+            border: 1px solid #699;
+        }
+
+        th {
+            font-weight: normal;
+            font-size: 1.4em;
+            text-align: left;
+            border: 1px dotted #699;
+            background-color: #f90;
+            color: #000;
+        }
+        th,td {
+            width: 10em;
+            padding: .5em 3em;
+        }
+        .odd {
+            background-color:#eb6;
+        }
+        .main__btn {
+            font-size: 1rem;
+            background-image: linear-gradient(to left,  #e9e0e4 0%, #eb6 100%);
+            padding: 14px 32px;
+            border: none;
+            border-radius: 4px;
+            color: rgb(9, 8, 10 .5);
+            margin-top: 2rem;
+            margin-left: 2rem;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.35s;
+            outline: none;
+        }
+
+
+
+        .main__btn::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #493cdc;
+            opacity: .3;
+            transition: all 0.35s;
+            border-radius: 4px;
+        }
+
+        .main__btn:hover {
+            color: #fff;
+            
+        }
+
+        .main__btn:hover::after {
+            width: 100%;
+        }
+        .tribute a:hover {
+            color: #fff;
+        }
+       
+        #internalnav a:hover {
+            color: #fff;
+        }
+       
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div id="logo">
+                <p>
+               Carolyne Wanjiru Mwangi Maina<br><em>An angel has spread her wings</em></p>
+               
+                <div id="portrait"><img src="../CarolineWanjiruMwangiMaina/images/Caro_01_1.png" alt="portrait"></div>
+            </div>
+            <div id="legend">
+               <nav>
+                <p><h3>Tributes by:</h3><em>(Click on the name)</em></p>
+                <ul class="tribute">
+                    <li><a href="#jd">Judge</a></li>
+                    <li><a href="#Ri">Riccoh</a></li>
+                    <li><a href="#Jo">Jojo</a></li>
+                    <li><a href="#Sh">Mum</a></li>
+                    <li><a href="#Cu">Cuzos</a></li>
+                </ul>
+            </nav><br>
+            
+            </div>
+            
+        </section>
+        <section id="main">
+            <article class="phide">
+                <h3>Burial Programme</h3>
+                <table summary="Order of events">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5:30 am</td>
+                            <td>Assemble at <b>Nairobi Womens Hospital-Ngong Road</b></td>
+                        </tr>
+                        <tr>
+                            <td>6:15 am</td>
+                            <td>Viewing of the body</td>
+                        </tr>
+                        <tr>
+                            <td>7:00 am</td>
+                            <td>Departure from mortuary to <b>Olo-Kalau</b></td>
+                        </tr>
+                        <tr>
+                            <td>10:30 am</td>
+                            <td>Stop-over at <b>Olo-Kalau</b></td>
+                        </tr>
+                        <tr>
+                            <td>11:15 am</td>
+                            <td>Hearse arrives <b>home</b></td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Speeches</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Welcoming guests</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Family Representative</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>In-law</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Friend</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Local Govt. Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Eulogy</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Tributes</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 pm</td>
+                            <td>Church Service</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Procession to the graveside</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Vote of Thanks</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Food is served</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>Guest leave at their own leisure</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="life">
+                <h3>Birth</h3>
+                <p>Caroline Wanjiru Mwangi was born on <b> <time datetime="1982-04-06">6<sup>th</sup> April 1982</time></b> in Mararal, Samburu County.
+                    She is the first born child to Mr George Gilbert Mwangi and Mrs Gladys Muthoni Kamau. She is sister to the late Humphrey Gitonga.</p>
+                    <h3 class="hide">Guciarwo</h3><br><p class="hide"> Mwendwoni-iri Carolyne Wanjiru Mwangi Maina aciarirwo tariki <b><time datetime="1982-04-06">6<sup>th</sup> April 1982</time></b> ituraini tia Mararal Samburu
+                county ari mwana wa kirigithathi wa Gladys Muthoni Kamau na George Gilbert Mwangi. Ni mwari wa nyina na mutigairi Humphrey Gitonga. </p>  
+                    <h3>Church</h3>
+                <p>Carolyne was baptised at birth at the <b>Allamano Catholic Church</b> Maralal. She later attended liturgy classes, had her first
+                    communion and later confirmation according to her Catholic faith. She is a staunch christian and a prayer warrior.</p>
+                    <h3 class="hide">Kanitha</h3><br><p class="hide">Mwaka-in wa 1982, Carolyne niabatithiririo kanaithai-ni wa Allamano Catholic Church, Mararal. Niaigirire kirathi kanitha-ini na akiamukia giathi kia Mwathani kia
+                        mbere. Niathire na mbere na mathomo na akiheo umiriria.
+                    </p>
+                    <h3>Education</h3>
+                <p>Caroline was enrolled at <b>Saint Mary's Primary School</b> in <time>1987</time> where she did her primary school studies and sat for her <b>Kenya Certificate of
+                     Primary Education</b> examination in <time>1995</time>.The following year she joined <b>Kisima Girls High School</b> where she sat for her <b>Kenya Certificate of Secondary Education </b>
+                    exam in <time>1999</time>. She then took a bridging course on soft computer skills at <b>Janitus Computer Institute</b> before joining <b>Saint Paul University</b>
+                    for a bachelors degree in <b>Procurement and Supply Chain Management.</b></p>
+                    <h3 class="hide">Githomo</h3><br><p class="hide">Carolyne akinyia miaka ya guthii thukuru niaigirire thukuru wa <b>St. Mary's Primary School</b> mwaka-ni wa 1987 kuria ekire kigeranio gia KCPE mwaka wa 1995. Mwaka
+                         wa 1996 niangitire thukuru wa <b>Kisima Girls High School</b> na agithoma kinya mwaka wa 1999 kuria ekire kigeranio kia form four na akihetuka. Nia chokire agithomera kothi ya computer na akirikia. Agichokire
+                         akiigira St. Paul University na akigia degree ya Procurement and Supply chain Management na akiheo thumbi.</p>
+                    <h3>Employment</h3>
+                <p>Caroline was employed by the <b>Ministry of Roads and Public Works</b> in <time>2006</time> as an <b>Assistant Secretary</b>. She left in
+                    <time>2012</time> and joined the <b>Kenya Rural Roads Authority</b> and was posted to <b>Makueni</b> County. Carolyne's last work station was in <b>Kajiado</b> County
+                    where she has been since <time>2019</time>.</p>
+                    <h3 class="hide">Wira</h3><br><p class="hide">Kuri mwaka wa 2006, Carolyne niandikirwo kibarua ni Ministry ya Roads and Public works eta karani kuria arutire wira ngiya mwaka wa 2012. Niacokire akiadikwo ni KERRA (Kenya 
+                        Rural Roads Authority) na agitomwo Makueni kinya mwaka wa 2019 riria aheirwo transfer na agitumwo Kajiado kuria ararutaga wira nginya kuhuruka gwake. </p>
+                    <h3>Marriage</h3>
+                <p>Caroline met the love of her life <b>Judge Maina Miano</b> in <time>2006</time>. The two fell deeply in love and before long formalised their courtship
+                    by marriage under <b>Kikuyu Customary Laws</b>.They have been blessed with two boys <b>Henricoh Kamau Maina</b> and <b>John Maina Miano</b>.</p>
+                    <h3 class="hide">Kuhika</h3><br><p class="hide">Mwaka-ini wa 2006, Carolyne niacemanire na mwadwa wake <b> Judge Maina Miano</b> na makihikania na mitugo ya Ugikuyu. Nimarathimirwo na ciana igiri <b>Henricoh Kamau Maina</b>
+                         na <b>John Maina Miano</b>. Carolyne niaredete muthuri wake na ciana ciake muno ona makiria ni aredete family yake.</p>
+                    <h3>Illness and Passing</h3>
+                <p>Caroline fell ill on <time datetime="2021-12-04">4<sup>th</sup> of December 2021</time> and was treated at <b>Kenol Hospital</b> and discharged. Almost three weeks later
+                    on <time datetime="2021-12-19">19<sup>th</sup> of December 2021</time> her illness recurred and she was taken to <b>Nairobi Womens Hospital - Kitengela</b>
+                    and then transferred to <b>Nairobi Womens Hospital - Ngong Road</b>. Caroline rested on <time datetime="2021-12-20">20<sup>th</sup> of December 2021</time>
+                    while undergoing treatment at the ICU facility.She was 39 years old.</p>
+                <p>The family wishes to thank Doctors and the Health care workers at the Nairobi Womens Hospital for the care Caroline was accorded while at the 
+                    hospital. We accept the will of the <b>Lord</b> in the belief that we shall meet with Caroline again. She has left behind her beloved husband <b>Judge Maina Miano</b>, co-wife <b>Judy Wangui
+                    Maina</b> and three children, <b>Henricoh</b>, <b>Johnny</b> and <b>Ruby</b>.</p>
+                    <h3 class="hide">Ndwari</h3><br><p class="hide">Kuri mweri inya wa December 2021, Carolyne nianjiririe guthinio ni mwiri na agitwaro thibitari wa <b>Kenol</b> na akirigitwo na akiheo rutha. Mweri 19 wa December 2021,
+                         niehiirwo ni dwari na akiguthokio <b>Nairobi Womens Hospital-Kitengela</b> agicoka agithamio <b>Nairobi Womens Hospita-Ngong Road (ICU)</b>. Kuri mweri mirongo iri wa December, Carolyne niahurukirio ni <b>Mwathani witu</b>
+                        kuri matha-ini ma thaa igii cia hwaini. Ahuruka ari na ukuru wa miaka mirongo etatu na kenda (39). Ithue family nituracokeria arigitani othe a <b>Nairobi Womens Hospital</b> na othe area mateithenagia nao ni wira mwega mararutire
+                         na kugeria guteithia Carolyne. Atiga muthuri wake aredete na mwiru wake <b>Judy Wangui</b> na ciana ciao <b>Henricoh</b>,<b>Johnny</b> na <b>Ruby</b>.</p>
+                <p><em>Carolyne we loved you but God loved you most. <br>Rest in peace till we meet again dear. <br>Safiri Salama.</em></p>
+            </article>
+
+            <ul id="galleryImg">
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_5.png" title="Baby Girl"><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_5.png" alt="Baby Girl"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_2.png" title="Studio One Days"><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_2.png" alt="Happy Couple"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_2.png" title="Mchungaji:...and further more..., Me: Oh Lord, here we go again..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_2.png" alt="Ruracio"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_12.png" title="all Local Tourists assemble here..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_12.png" alt="Coasto"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_13.png" title="Fashionista"> <img src="../CarolineWanjiruMwangiMaina/images/Caro_03_13.png" alt="The Boys"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_4.png" title="Come here baby..."> <img src="../CarolineWanjiruMwangiMaina/images/Caro_03_4.png" alt="Power Couple"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_15.png" title="Work place beste"><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_15.png" alt="Work place beste"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_8.png" title="And another beste"><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_8.png" alt="And another beste"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_3.png" title="Some Shoshos"><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_3.png" alt="Some Shoshos"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_1.png" title="Three Generations in One pic... "><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_1.jpg" alt="Three Generations in One pic..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_12.png" title="Power suit day..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_12.png" alt="Power suit day..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_11.png" title="Watch out future me..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_11.png" alt="Watch out future me..."></a></li>            
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_10.png" title="They grow sooo fast..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_10.png" alt="They grow sooo fast..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_9.png" title="Let's take this white dude shaggs, ama?"><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_9.png" alt="Let's take this white dude shaggs, ama?"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_7.png" title="Mali safi, ama?"><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_7.png" alt="Mali safi, ama?"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_6.png" title="Deuces bruh..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_6.png" alt="Deuces bruh..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_4.png" title="This hair, all natural, yeah all..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_4.png" alt="This hair, all natural, yeah all..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_2.png" title="mmmmwah..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_2.png" alt="mmmmwah..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_1.png" title="2nd degree cuteness..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_1.png" alt="2nd degree cuteness..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_14.png" title="Love you sooo much baby..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_14.png" alt="Love you sooo much baby..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_11.png" title="Hapo juu kidogo..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_11.png" alt="Hapo juu kidogo..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_10.png" title="Yeah it says here you are adopted...ha ha ha"><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_10.png" alt="Yeah it says here you are adopted...ha ha ha"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_9.png" title="Those two dudes..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_9.png" alt="Those two dudes..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_8.png" title="The sky is ours now..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_8.png" alt="The sky is ours now..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_7.png" title="Them tree ladies..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_7.png" alt="Them tree ladies..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_6.png" title="back in the day...getting the groove on..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_6.png" alt="back in the day...getting the groove on..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_5.png" title="Abuju buju buju..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_5.png" alt="Abuju buju buju..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_3.png" title="Uhuru park..low budget outing for love struck young love..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_3.png" alt="Uhuru park..low budget outing for love struck young love..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_1.png" title="Remember the last time we were here...he he he..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_1.png" alt="Remember the last time we were here...he he he..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_12.png" title="This is I"><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_12.png" alt="This is I"></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_11.png" title="Huyu ni M'baru wa Subaru na fam..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_11.png" alt="Huyu ni M'baru wa Subaru na fam..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_10.png" title="Angalia hawa nao..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_10.png" alt="Angalia hawa nao..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_9.png" title="bruh..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_9.png" alt="bruh..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_8.png" title="Ruracio..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_8.png" alt="Ruracio..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_7.png" title="You good?..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_7.png" alt="You good?..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_6.png" title="Ruracio..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_6.png" alt="Ruracio..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_5.png" title="Hii mali ni safi, na ni ya ..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_5.png" alt="Hii mali ni safi, na ni ya ..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_4.png" title="and further more..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_4.png" alt="and further more..."></a></li>
+                <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_02_3.png" title="Take it easy..."><img src="../CarolineWanjiruMwangiMaina/images/Caro_02_3.png" alt="Take it easy..."></a></li>
+            </ul>
+            
+        </section>
+       <article>
+            <h1>Tribute</h1>
+            <p><em>Click a link for the details</em></p>
+            <ul id="internalnav">
+                <li id="jd"><a href="#judge">by Judge (husband)</a></li>
+                <li id="Jo"><a href="#jojo">by Jojo (son)</a></li>
+                <li id="Ri"><a href="#ricoh">by Riccoh (son)</a></li>
+                <li id="Sh"><a href="#mum">by Gladys(Mother)</a></li>
+                <li id="Cu"><a href="#cuzo">from Cousins</a></li>
+                <li id="home"><a href="#">Top</a></li>
+            </ul>
+            <div class="section" id="judge">
+                <h2>Tribute by Judge (Husband)</h2>
+                <p>Honey...That's what I called you from the first time we met , and clicked...for sure I knew that I had found a soulmate.
+                A happy soul that fit every part of I, wife of my young self, my rib from heaven. You made a very good companion in this
+                life's journey. I have lots of memorable moments shared with you sweetheart. I will forever miss how you called me
+                <b>Kamujuaji</b> as that was the pet name you gave me ... and only you ever used.
+                Honey, the goals and visions we shared for our large and extended family and in particular our two boys, <b>Ricoh</b> and <b>Jojo</b> I will treasure and
+                I will fulfill as per <b>God's</b>  will. I will miss your unique laughter that softerned the hard times. You never kept a grudge
+                and you always sought happiness for us and for those close to us. I shall forever be grateful for the two handsome sons
+                that you gave me and for the parental care you gave them. I will care for our mothers (yours and mine - now all mine) as 
+                a son should and I shall do all that is possible to make sure that all plans that they hold dear are fulfilled. I have loved
+                you in life and still do in death, I miss you already. Find eternal rest babe. Bye Honey. 
+            
+                </p>
+            </div>
+            <div class="section" id="jojo">
+                <h2>Tribute by Jojo (Son)</h2>
+                <p> Dear mum, thank you for your protection and love from when I was born to your last day here on earth. Thank you for providing for me and Ricoh. We lacked for
+                nothing cause you worked hard and sacrificed alot for us. It was both shocking and painful to learn of your passing. I was so sad
+                that I couldn't do anything for myself for a while. I wish I could see your happy smile one more time Mum. You taught me so many
+                things but most importantly, you introduced me to God, and taught me how to pray.You promised to support and protect us always, I
+                know you will do just that, thought now in heaven. As we lay you to rest today, I pray that you rest in peace. Goodbye Mum.</p>
+            </div>
+            <div class="section" id="ricoh">
+                <h2>Tribute by Riccoh (Son)</h2>
+                <p>Dear Mum, I'm writting this letter to say farewell and to show my appreciation for all you deed in my life.To try and explain 
+                just how much you mean to me is an impossible task. You are everything to me. You have loved me and been by my side and that's 
+                all that matters...Your memory lives in me and keeps me company. I wish God had given us more time together. You are 
+                the best mother anyone would wish for, you provided everything, food, shelter, nice clothing and everything electronic That we ever wanted. 
+                You instilled displine in me (and Jojo) that has helped to fashion the person I am today. I would not be here, nor have the life I do if it were not for you.
+                You said you would always be there for me, I pray that even though you are not here physically, you will keep your word spiritually.
+                I love you Mum, now and forever. I will always cherish you in my heart. Thanks Mum for everything. I love you. Your loving son Riccoh.</p>
+            </div>
+            <div class="section" id="mum">
+                <h2>Tribute by Gladys Muthoni Kamau (Mother)</h2>
+                <p>Dear Carol, you were the first fruit of my womb. The child who made me a mother. Over the years you have been my pride and joy. You have lived
+                a good life and fulfilled most of your goals. Thank you for giving me a wonderful son Judge and his family, without who I would 
+                have been very lonely. Thank you for making me a grandmother by having Henriccoh and Johnny. I promise to to be there for them
+                like a mother would. My daughter, I want you to know that I love you so so much and I miss you so so much now that you've left. Words
+                cannot express the pain and loss that I'm going through now that you and your brother, my only children have left me. I have cried so many tears,
+                death shall be no more, nor sorrow, nor pain, for all former things have passed. It is well. Rest in peace my loving daughter.
+                Koma thayo Ciru.
+                </p>
+            </div>
+            <div class="section" id="cuzo">
+                <h2>Tribute by Cousins</h2>
+                <p>The gift that kept giving has left us. Cuzo, our hearts are truly broken now that you've left so soon. No one can fill the void
+                that you've left. But we have to move on, Shiru we know you would not want us to live in agony. We shall not forget the love you had for us, you are 
+                our big sister to whom we always look up. We shall miss all the laughter we shared, your sweet blue lady scent, your love for old school R&B,
+                and most importantly, your beautiful smile and heart. Heaven has truly gained an angel. Lord in deep and devoted faith, we reject
+                the passing and thats why we are broken but we accept your will. We shall meet again dear cousin, but for now rest in peace Shiru. 
+                We love you.
+                </p>
+            </div>
+       </article>
+   
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Apache24/htdocs/pROJECTS/php"
+		},
+		{
+			"path": "../../../../Apache24"
+		},
+		{
+			"path": "../../jaySkript"
+		},
+		{
+			"path": "../../Canvas_tutorial"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../toNinja"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Projects",
+		"livePreview.defaultPreviewPath": "c:\\xampp\\htdocs\\toNinja\\chapter_02\\06_zebra_striping\\index.html"
+	}
+}
