@@ -17,6 +17,10 @@
 		},
 		{
 			"path": "../../toNinja"
+		},
+		{
+			"name": "cycle",
+			"path": "cycle"
 		}
 	],
 	"settings": {

@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caroline Wanjiru Mwangi Maina</title>
 
+     <!-- include jQuery -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+     <!-- include Cycle2 -->
+     <script src="/cycle2-master/build/jquery.cycle2.min.js"></script>
+     <script src="/cycle2-master/src/jquery.cycle2.flip.js"></script>
+     <script src="/cycle2-master/src/jquery.cycle2.carousel.js"></script>
+     <script src="/cycle2-master/src/jquery.cycle2.shuffle.js"></script>
+     <script src="/cycle2-master/src/jquery.cycle2.video.js"></script>
+
     <script src="../CarolineWanjiruMwangiMaina/scripts/caro_06.js"></script>
     <script src="../CarolineWanjiruMwangiMaina/scripts/global.js"></script>
     <style>
@@ -217,12 +226,18 @@
         #internalnav a:hover {
             color: #fff;
         }
-       
-      
+      /* #pic_container {
+        position: absolute;
+       }
+       #shuffler {
+        position: relative;
+        float: right;
+        padding-top: 100px;
+       }
+      */
     </style>
 </head>
 <body>
-    <p>Warning</p>
     <div class="container">
         <section>
             <div id="logo">
@@ -378,7 +393,7 @@
                          na kugeria guteithia Carolyne. Atiga muthuri wake aredete na mwiru wake <b>Judy Wangui</b> na ciana ciao <b>Henricoh</b>,<b>Johnny</b> na <b>Ruby</b>.</p>
                 <p><em>Carolyne we loved you but God loved you most. <br>Rest in peace till we meet again dear. <br>Safiri Salama.</em></p>
             </article>
-
+<div id="pic_container">
             <ul id="galleryImg">
                 <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_04_5.png" title="Baby Girl"><img src="../CarolineWanjiruMwangiMaina/images/Caro_04_5.png" alt="Baby Girl"></a></li>
                 <li><a href="../CarolineWanjiruMwangiMaina/images/Caro_03_2.png" title="Studio One Days"><img src="../CarolineWanjiruMwangiMaina/images/Caro_03_2.png" alt="Happy Couple"></a></li>
@@ -422,6 +437,26 @@
             </ul>
             
         </section>
+         <!-- tileBlind -->
+   <div id="shuffler" class="cycle-slideshow" 
+   data-cycle-fx=shuffle
+    data-cycle-timeout=4000
+    data-cycle-carousel-visible=4
+    >
+        <img src="../CarolineWanjiruMwangiMaina/images/Caro_03_2.png">
+        <img src="../CarolineWanjiruMwangiMaina/images/Caro_02_8.png">
+        <img src="../CarolineWanjiruMwangiMaina/images/Caro_02_6.png">
+        <img src="../CarolineWanjiruMwangiMaina/images/Caro_03_3.png">
+        <img src="../CarolineWanjiruMwangiMaina/images/Caro_02_5.png">
+        <img src="../CarolineWanjiruMwangiMaina/images/Caro_02_12.png">
+        <img src="../CarolineWanjiruMwangiMaina/images/Caro_02_11.png">
+        <img src="../CarolineWanjiruMwangiMaina/images/Caro_03_11.png">
+    </div>
+    <div class="center">
+        <a href=# id="prev5"> <b> &lt;&lt; Prev  </b></a> 
+        <a href=# id="next5"> <b>Next  &gt;&gt;</b></a>
+    </div>
+</div>
        <article>
             <h1>Tribute</h1>
             <p><em>Click a link for the details</em></p>
